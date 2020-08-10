@@ -1,0 +1,16 @@
+
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<form action="" method="POST">
+	{% csrf_token %}
+	{{form}}
+	<input type="submit" name="Submit" value="Save">	
+</form>
+<div class="col-sm-12">
+    <a href="{% url 'home' %}"><button id="singlebutton" name="singlebutton" class="btn btn-primary center-block"  >Home</button></a><br><br><br>
+    <a href="{% url 'new' %}"><button id="singlebutton" name="singlebutton" class="btn btn-primary center-block"  >Display all Cages</button></a>
+     <!--a href="{% url 'create'%}" class="btn btn-primary">New</a-->
+</div>
+{% endblock %}

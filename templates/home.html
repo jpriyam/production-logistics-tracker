@@ -1,0 +1,43 @@
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rebartek</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body >
+<div class="jumbotron text-center">
+  <h1>Rebartek </h1>
+  <p>A bold and experienced team bringing innovative ideas to life!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Customized design</h3>
+      <p>Together with you,we tailor rebar cages for your specific project.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Robotic rebar fabrication</h3>
+      <p>Our robotic manufacturing process enables us to deliver high-quality rebar cages on short notice.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Lean administration</h3>        
+      <p>When you place an order at Rebartek we will take care of everything.</p>
+    </div>
+  </div>
+</div>
+<div class="col-sm-12">
+    <a href="{% url 'create' %}"><button id="singlebutton" name="singlebutton" class="btn btn-primary center-block"  >Add Cage Info</button></a><br><br><br>
+    <a href="{% url 'new' %}"><button id="singlebutton" name="singlebutton" class="btn btn-primary center-block"  >Display all Cages</button></a>
+     <!--a href="{% url 'create'%}" class="btn btn-primary">New</a-->
+</div>
+</body>
+</html>
+{% endblock %}

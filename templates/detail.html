@@ -1,0 +1,38 @@
+{% load static %}
+{% block content %}
+{% load mathfilters %}
+<h1>Cages</h1>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+<table width='60%' height=200>
+	<tr>
+		<th id=1>Name of cage</th>
+		<th id =2>Station A</th>
+		<th id =3>Station B</th>
+		<th id =4>Station C</th>
+	</tr>
+  {%for cage,value in Cages.items%}
+      <tr>
+      	<td>{{cage}}</td>
+      	<td>{{value.1}}</td>
+        <td>{{value.2}}</td>
+      	<td>{{value.3}}</td>
+      </tr>
+  
+  {% endfor %}
+</table>
+<div class="col-sm-12">
+  <br><br>
+    <a href="{% url 'create' %}"><button id="singlebutton" name="singlebutton" class="btn btn-primary center-block">Add Cage Info</button></a><br><br><br>
+    <a href="{% url 'home' %}"><button id="singlebutton" name="singlebutton" class="btn btn-primary center-block"  >Home</button></a>
+</div>
+
+{% endblock %}
+
+
+
