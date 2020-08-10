@@ -1,21 +1,15 @@
 # mini
  A mini app to log and display the time we need to make the cages,at different workstations.
  ![image](https://github.com/jpriyam/mini/blob/master/mini.gif)
-Install Python (3.6 or 3.7) 
-Install git bash on the laptop
-Clone the repository using the following commands on gitbash:
-
-git init  This creates a .git directory that contains the Git configuration files.
-Clone the repository and copy the -HTTPS:
- https://gitlab.com/gitlab-org/gitlab.git
-Run the command on gitbash - git clone https://gitlab.com/gitlab-org/gitlab.git
-Next command will be -git pull origin master
-You’ll have to add your gitlab password every time you clone through HTTPS.
-
-      4) if there is a file called requirements.txt use the command 
+ 
+ 
+ 
+1) Install Python (3.6 or 3.7) 
+2) Install git bash on the laptop
+3) Clone the repository .
+4) There is a file called requirements.txt use the command 
 pip install -r requirement.txt
-      5) Open the folder in an editor and open Settings folder
-      6) Settings folder ->  env.py
+5) In settings.py,make the following changes:
 DATABASES = {
     'default': {
         'ENGINE' : 'django.db.backends.mysql',
@@ -27,11 +21,11 @@ DATABASES = {
     }
 }
 
-7) create a database in the with the same name in mysql
-8) create a super user with the following commands 
+6) Create a database in the with the same name in mysql
+7) Create a super user with the following commands 
 python manage.py createsuperuser
 Enter your name and password.
-9) Then run 
+8) Then run 
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
