@@ -2,9 +2,7 @@
 
 This is a mini production-based app built using Django for managing the production process. The app provides a platform to view, edit, display the time we need to make cages and subcages at different workstations, and track production progress. It is designed to streamline the production process and increase efficiency by providing a centralized platform for managing production orders and materials. The app is easy to use and provides a simple, user-friendly interface for managing production tasks.
  
- ![image](https://github.com/jpriyam/mini/blob/master/mini.gif)
- 
- 
+## Steps to run:
  
 1) Install Python (3.6 or 3.7) 
 2) Install git bash on the laptop
